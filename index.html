@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="header">
+        <h1>Slot Machine</h1>
+        <p>
+          Press SPIN to play. 
+        </p>
+        <div class="fs-count"></div>
+      </div>
+      <div class="slot"></div>
+      <div class="controls">
+        <div>
+          <p>Balance:</p>
+          <span id="balance"></span>
+        </div>
+        <div>
+          <p>Bet:</p>
+          <span id="bet"></span>
+        </div>
+        <div>
+          <p>Win:</p>
+          <span id="win">0</span>
+        </div>
+        <div class="btns">
+          <button class="decrease-bet-btn">-</button>
+          <div class="main-btns">
+            <button class="spin-btn">SPIN</button>
+            <button class="max-bet">MAX BET</button>
+          </div>
+          <button class="increase-bet-btn">+</button>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
